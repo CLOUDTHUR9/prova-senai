@@ -292,7 +292,7 @@ export class Aluno {
                                             SET nome='${aluno.getNome()}',
                                                 cpf='${aluno.getCpf()}',
                                                 telefone='${aluno.getTelefone()}',
-                                                email='${aluno.getEmail()}')
+                                                email='${aluno.getEmail()}'
                                             WHERE id_aluno=${aluno.getIdAluno()};`;
 
             // Executa a consulta de atualização

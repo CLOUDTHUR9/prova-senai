@@ -277,11 +277,11 @@ public setStatusCurso(statusCurso: boolean) {
         let queryResult = false; // Variável para armazenar o resultado da operação.
         try {
             // Construção da query SQL para atualizar os dados do Curso no banco de dados.
-            const queryAtualizarCurso = `UPDATE curso SET 
+            const queryAtualizarCurso = `UPDATE Curso SET 
                                             nome = '${curso.getNome().toUpperCase()}', 
-                                            especialidade = '${curso.getDuracao()}',
-                                            crm = '${curso.getModalidade()}' )                                          
-                                        WHERE id_medico = ${curso.idCurso}`;
+                                            duracao = '${curso.getDuracao()}',
+                                            modalidade = '${curso.getModalidade()}'                                           
+                                        WHERE id_curso = ${curso.idCurso}`;
 
             // Executa a query de atualização e verifica se a operação foi bem-sucedida.
             console.log(queryAtualizarCurso)

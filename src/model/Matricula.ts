@@ -287,8 +287,8 @@ public setIdAluno(idAluno: number): void {
             // matricula SQL para atualizar os dados do paciente
             const queryAtualizarMatricula = `UPDATE matricula
                                                 SET id_aluno='${matricula.getIdAluno()}',
-                                                    id-curso='${matricula.getIdCurso()}',
-                                                    data_matricula='${matricula.getDataMatricula()}')                                                                                                   
+                                                    id_curso='${matricula.getIdCurso()}',
+                                                    data_matricula='${matricula.getDataMatricula()}'                                                                                              
                                                 WHERE id_matricula=${matricula.idMatricula};`;
 
             // Executa a matricula de atualização
